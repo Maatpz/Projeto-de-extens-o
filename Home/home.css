@@ -129,13 +129,12 @@ header ul{
 	height: 10px;
 	background-color: #0056b3;
 }
-.barra_lateral_header{
+/* .barra_lateral_header{
     width: 100%;
     height: 40px;
     background-color: #0056b3;
     margin-top: -10px;
-
-}
+} */
 
 .carousel-item img {
     width: 100%;

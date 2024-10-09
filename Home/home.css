@@ -102,7 +102,7 @@ header ul{
     margin-right: 200px;
 }
 .text_button_2 {
-	margin-left: 20px;
+	margin-left: 5px;
 }
 
 .text_button_2 h2{
@@ -186,6 +186,91 @@ header ul{
 
 
 
+
+.formulario{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  #contato{
+    height: 60px;
+    margin: 20px
+  }
+  .contato_h1{
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+  }
+  .pai_form {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    color:#000000;
+    margin-bottom: 30px;
+  }
+  .pai_form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .pai_form .ppp input{
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .pai_form select {
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  .pai_form input  {
+    margin-right: 5px;
+  }
+  .pai_form .radio{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 4px;
+  
+  }
+  .pai_form .infomacao {
+    margin-bottom: 5px;
+  }
+  .pai_form button {
+    width: 100%;
+    margin-top: 5px;
+    padding: 9px;
+    border: none;
+    border-radius: 6px;
+    background-color:#0044cc;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: auto;
+  }
+  .pai_form button:hover {
+    background-color: #ffcc00;
+    color: #333;
+    font-weight: bold;
+  }
+  
+
+
+
+  
 
 
 

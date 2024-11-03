@@ -3,6 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
     cards.forEach((card, index) => {
         setTimeout(() => {
             card.classList.add("aparecer");
-        }, index * 200); // Aparece com atraso entre os cartões
+        }, index * 200);
     });
 });

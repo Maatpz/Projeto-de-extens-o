@@ -94,25 +94,26 @@
         </div>
     </div>
 
+    <div class="barra_lateral_galeria"></div>
 
-    
-    <div id="contato"></div>
-    <h1 class="contato_h1"> Contato</h1>
-    <div class="pai_form">
-        <form class="formulario">
-            <div class="ppp">
-            <label> Nome:</label>
-            <input type="text" placeholder="Digite seu nome" name="nome" id="nome_form">
-            <label> Email:</label>
-            <input type="email" placeholder="Digite seu email" name="email" id="email_form">
-            <label>Telefone:</label>
-            <input type="tel" placeholder="Digite seu telefone" name="telefone" id="tel_form">
-            <label for="mensagem">Mensagem</label>
-            <textarea class="mensagem" name="mensagem" rows="4" cols="50"  required></textarea>
+    <div class="galeria">
+        <div class="galeria_item" onclick="zoomImage(this)">
+            <img src="/Home/Imagens/Projetos/1.jpg" alt="Imagem 1">
         </div>
-            <button type="button" value="Cadastrar" id="cad"> Enviar </button>
-        </form>
- </div>
+        <div class="galeria_item" onclick="zoomImage(this)">
+            <img src="/Home/Imagens/Projetos/2.jpg" alt="Imagem 2">
+        </div>
+        <div class="galeria_item" onclick="zoomImage(this)">
+            <img src="/Home/Imagens/Projetos/3.jpg" alt="Imagem 3">
+        </div>
+        <div class="galeria_item" onclick="zoomImage(this)">
+            <img src="/Home/Imagens/Projetos/4.jpg" alt="Imagem 4">
+        </div>
+    </div>
+
+    <div id="modal" onclick="closeZoom()">
+        <img id="modalImage" src="" alt="Imagem em Zoom">
+    </div>
 
  <div class="barra_lateral"></div>
 

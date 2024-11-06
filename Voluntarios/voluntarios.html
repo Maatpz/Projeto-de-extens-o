@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Voluntários | Lar dos Pequeninos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="/Home/home.html"> <img src="/Voluntarios/imagens/logo.webp" alt="Logo Lar dos Pequeninos" class="logo">  </a>
+  </header>
+
+  <div class="container">
+    <h1>Cadastro de Voluntário</h1>
+    <p>Junte-se ao Lar dos Pequeninos e ajude a transformar vidas! Preencha o formulário abaixo para se cadastrar.</p>
+
+    <form action="enviar_cadastro.php" method="post" class="card form-grid">
+      <div class="form-group">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="form-group">
+        <label for="cidade">Cidade onde mora</label>
+        <input type="text" id="cidade" name="cidade" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="experiencia">Já trabalhou com crianças?</label>
+        <select id="experiencia" name="experiencia" required>
+          <option value="">Selecione</option>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="disponibilidade">Disponibilidade</label>
+        <select id="disponibilidade" name="disponibilidade" required>
+          <option value="">Selecione</option>
+          <option value="1x por semana">1x por semana</option>
+          <option value="2x por semana">2x por semana</option>
+          <option value="Fins de semana">Fins de semana</option>
+          <option value="Flexível">Flexível</option>
+        </select>
+      </div>
+
+      <div class="form-group full-width">
+        <label>Como prefere ajudar?</label>
+        <div class="checkbox-group two-columns">
+          <label><input type="checkbox" name="ajuda[]" value="atividades_diferenciadas"> Realizando atividades diferenciadas para as crianças como: aula de música, teatro, capoeira, dança, psicomotricidade e etc.</label>
+          <label><input type="checkbox" name="ajuda[]" value="recreacao_esportes"> Realizando atividades de recreação e esportes.</label>
+          <label><input type="checkbox" name="ajuda[]" value="contando_historias"> Contando histórias para as crianças.</label>
+          <label><input type="checkbox" name="ajuda[]" value="tomando_conta"> Ajudando a tomar conta das crianças.</label>
+          <label><input type="checkbox" name="ajuda[]" value="auxiliar_servicos_gerais"> Ajudando no trabalho da auxiliar de serviços gerais.</label>
+          <label><input type="checkbox" name="ajuda[]" value="auxiliar_cozinha"> Ajudando como auxiliar de cozinha.</label>
+          <label><input type="checkbox" name="ajuda[]" value="atendimento_especializado"> Oferecendo atendimento especializado: psicológico, fonoaudiólogo e etc.</label>
+        </div>
+      </div>
+
+      <p style="color: red;">É preciso ter 18 anos ou mais para poder ser um voluntário.</p>
+
+      <div class="form-group full-width">
+        <label for="habilidades">Quais habilidades ou conhecimentos você gostaria de compartilhar?</label>
+        <textarea id="habilidades" name="habilidades" placeholder="Descreva suas habilidades, experiências ou interesses que podem contribuir para a ONG."></textarea>
+      </div>
+
+      <button type="submit">Enviar Cadastro</button>
+    </form>
+  </div>
+
+</body>
+</html>

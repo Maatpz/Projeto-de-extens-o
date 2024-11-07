@@ -30,45 +30,59 @@
     </header>
 
 
-    <div class="container_c">
-        <h1> DOAÇAO TESTE 11111</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
+    <!--Conteudo -->
+    <div>
+        <img src="Imagens/5.png" class="doaçao_banner">
     </div>
 
-    <div class="container">
-        <h1> DOAÇAO TESTE</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-    </div>
-    <div class="container">
-        <h1> DOAÇAO TESTE</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-    </div>
-    <div class="container">
-        <h1> DOAÇAO TESTE</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-    </div>
-    <div class="container">
-        <h1> DOAÇAO TESTE</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-    </div>
-    <div class="container">
-        <h1> DOAÇAO TESTE</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-    </div>
-    <div class="container">
-        <h1> DOAÇAO TESTE</h1>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
+    <div class="container_texto">
+        <h4>Ajude a transformar a vida de 30 crianças de 2 a 5 anos! Contribua para a Escola Filantrópica Professor Juarez Mangia, onde elas recebem alimentação, educação e carinho em período integral. Seja um doador e faça a diferença! 🌟</h4>
+        <p class="destaque">QUE TAL FAZER PARTE DESTA REDE DE SOLIDARIEDADE CONTRIBUINDO COM DOAÇÕES MONETÁRIAS OU MATERIAIS? SUA AJUDA É MUITO IMPORTANTE!</p>
+      </div>
+    <div class="texto_plano">
+        <p>ESCOLHA O TIPO DE DOAÇÃO</p>
     </div>
 
 
 
+  <!-- Acordeão -->
+  <div class="accordion" onclick="toggleContent('monetary')">Doação Monetária</div>
+  <div class="accordion" onclick="toggleContent('material')">Doação Material</div>
+
+  <!-- Conteúdo ao lado -->
+  <div id="content" class="content">
+      <div id="monetary-section" class="form-section">
+          <h3>Doação Monetária</h3>
+          <form>
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+              
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+              
+              <label for="phone">Telefone:</label>
+              <input type="tel" id="phone" name="phone" placeholder="Digite seu telefone" required>
+              
+              <label for="message">Mensagem:</label>
+              <textarea id="message" name="message" rows="4" placeholder="Escreva uma mensagem"></textarea>
+              
+              <label for="amount">Digite o valor da doação:</label>
+              <input type="number" id="amount" name="amount" placeholder="Ex: 50" min="1" required>
+              
+              <button type="submit">Doar</button>
+          </form>
+          <div id="qr-code">QR Code</div>
+      </div>
+      
+      <div id="material-section" class="map-section">
+          <h3>Doação Material</h3>
+          <p>Você pode doar materiais no seguinte local:</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.047116745262!2d-42.976740156638364!3d-22.948491825824355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99892a852d02f7%3A0x4be3f35d5b3c0340!2sEstr.%20Alcione%20de%20Assis%20-%20Ino%C3%A3%2C%20Maric%C3%A1%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1731018727285!5m2!1spt-BR!2sbr"
+           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+  </div>
 
 
 
@@ -80,7 +94,12 @@
 
 
 
-    <footer class="footer">
+
+
+
+
+
+<footer class="footer">
         <div class="container">
             <div class="row text-light">
                 <div class="col-md-4">
@@ -111,6 +130,7 @@
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="/Doação/script.js"></script>
 
 </body>
 </html>

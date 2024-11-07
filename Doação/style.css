@@ -72,21 +72,130 @@ header ul{
     color: #ffffff;
 }
 
-
-
-
-.container_c{
-    margin: 150px auto;
+.doaçao_banner{
+    width: 100%;
+    height: 70vh;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    object-fit: cover;
+}
+.container_texto {
+    max-width: 80rem;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+  }
+  
+.destaque {
+    color: #ffcc00;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+  
+.texto_plano {
+    margin-top: 20px;
     justify-content: center;
-    align-items: center;
-    color: #0044cc;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
 }
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+.accordion {
+    width: 300px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s;
+}
+.accordion:hover {
+    background-color: #e0e0e0;
+}
+.content {
+    width: 500px;
+    margin-left: 20px;
+}
+.form-section, .map-section {
+    display: none;
+}
+#qr-code {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+form label {
+    display: block;
+    margin: 8px 0 4px;
+}
+form input, form textarea, form button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer {
+    margin-top: 1.3rem;
     width: 100%;
     background-color: #333; 
     padding: 35px 0;

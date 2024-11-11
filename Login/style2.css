@@ -1,0 +1,96 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow: hidden; /* Impede a rolagem na página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura da tela */
+    margin: 0; /* Remove a margem padrão do body */
+}
+
+/* Imagem de Fundo Desfocada */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('fotor-2024082715827.png') no-repeat center center/cover;
+    filter: blur(8px); /* Ajuste o nível de desfoque conforme necessário */
+    z-index: -1; /* Coloca a imagem atrás do conteúdo */
+}
+
+/* Container de Redefinição */
+.reset-container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative; /* Necessário para o conteúdo ficar acima do fundo */
+}
+
+/* Formulário de Redefinição */
+.reset-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.reset-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color:skyblue;
+    outline: none;
+}
+
+button {
+    background: skyblue;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: skyblue;
+}

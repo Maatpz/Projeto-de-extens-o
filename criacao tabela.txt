@@ -1,0 +1,44 @@
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS administrador (
+    id_adm INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    senha VARCHAR(100)
+)
+""")
+
+cursor.execute(
+    CREATE TABLE IF NOT EXISTS voluntario (
+        id INT AUTO_INCREMENT PRIMARY KEY,  
+        nome VARCHAR(100) NOT NULL,             
+        cidade VARCHAR(100) NOT NULL,          
+        email VARCHAR(255) NOT NULL,    
+        telefone VARCHAR(20),    
+        experiencia BOOLEAN,                  
+        disponibilidade VARCHAR(50),            
+        experiencia TINYINT(1),                             
+        habilidades TEXT                      
+    )
+'''
+
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS doador (
+    id_doador INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    telefone VARCHAR(20),
+    endereco VARCHAR(255),
+    id_adm INT,
+    FOREIGN KEY(id_adm) REFERENCES administrador (id_adm)
+)
+""")
+
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS doacao (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    id_doador INT,
+    valor DECIMAL(10, 2),
+    data DATE,
+    FOREIGN KEY (id_doador) REFERENCES doador(id_doador)
+)
+""")

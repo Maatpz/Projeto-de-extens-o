@@ -53,8 +53,8 @@ ul a:hover {
     background-color: #0044cc; 
 }
 ul .fixo{
-    color: #ffffff; 
-    background-color: #0044cc; 
+    color: blue; 
+    background-color: #ffcc00; 
 }
 header ul{
     margin-right: 70px;
@@ -68,6 +68,20 @@ header ul{
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 #btn_voluntario:hover {
+    background-color: #0044cc;
+    color: #ffffff;
+}
+
+#btn_login {
+    border: 2px solid #ffcc00; 
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: red; 
+    color: white; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#btn_login:hover {
     background-color: #0044cc;
     color: #ffffff;
 }

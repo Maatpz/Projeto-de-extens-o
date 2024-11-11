@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.table-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.select-container,
+.search-container {
+    flex: 1;
+    padding: 10px;
+}
+
+select, input[type="number"], input[type="text"], button {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#result th, #result td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1rem;
+}
+
+#result th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.update-form {
+    margin-top: 30px;
+    display: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.update-form .form-group {
+    margin-bottom: 15px;
+}
+
+.update-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#delete-btn {
+    display: none;
+    margin-top: 20px;
+    background-color: #f44336;
+}
+
+#delete-btn:hover {
+    background-color: #e53935;
+}
+
+.table-options input[type="number"] {
+    max-width: 150px;
+}
+
+#delete-btn {
+    width: auto;
+    padding: 10px 20px;
+    margin: 20px 0 0 0;
+}
+
+.btn {
+    width: auto;
+    padding: 10px 20px;
+    text-align: center;
+}

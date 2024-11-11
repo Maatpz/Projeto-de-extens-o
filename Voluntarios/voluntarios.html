@@ -16,7 +16,7 @@
     <h1>Cadastro de Voluntário</h1>
     <p>Junte-se ao Lar dos Pequeninos e ajude a transformar vidas! Preencha o formulário abaixo para se cadastrar.</p>
 
-    <form action="enviar_cadastro.php" method="post" class="card form-grid">
+    <form id="cadastroForm" action="enviar_cadastro.php" method="post" class="card form-grid">
       <div class="form-group">
         <label for="nome">Nome Completo</label>
         <input type="text" id="nome" name="nome" required>
@@ -41,8 +41,8 @@
         <label for="experiencia">Já trabalhou com crianças?</label>
         <select id="experiencia" name="experiencia" required>
           <option value="">Selecione</option>
-          <option value="Sim">Sim</option>
-          <option value="Não">Não</option>
+          <option value= 1>Sim</option>
+          <option value= 0>Não</option>
         </select>
       </div>
 
@@ -81,5 +81,6 @@
     </form>
   </div>
 
+  <script src="validacao.js"></script>
 </body>
 </html>

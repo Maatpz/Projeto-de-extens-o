@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Dados</title>
+    <link rel="stylesheet" href="teste.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Dados</h1>
+
+        <div class="table-options">
+            <div class="select-container">
+                <label for="tabela">Escolha a Tabela:</label>
+                <select id="tabela">
+                    <option value="administrador">Administrador</option>
+                    <option value="voluntario">Voluntário</option>
+                    <option value="doador">Doador</option>
+                    <option value="doacao">Doação</option>
+                </select>
+            </div>
+
+            <div class="search-container">
+                <label for="id">Digite o ID:</label>
+                <input type="number" id="id" placeholder="ID da linha">
+                <button class="btn" onclick="pesquisar()">Pesquisar</button>
+            </div>
+        </div>
+
+        <div id="result"></div>
+
+        <div id="form-update" class="update-form" style="display:none;">
+            <h2>Atualizar Dados</h2>
+            <div class="form-group">
+                <label for="campo">Digite o nome da coluna:</label>
+                <input type="text" id="campo" placeholder="Campo a ser atualizado">
+            </div>
+            <div class="form-group">
+                <label for="novo_valor">Novo Valor:</label>
+                <input type="text" id="novo_valor" placeholder="Novo valor do campo">
+            </div>
+            <button class="btn" onclick="atualizar()">Confirmar Atualização</button>
+        </div>
+
+        <button id="delete-btn" class="btn delete-btn" onclick="deletar()" style="display:none;">Deletar Linha</button>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
